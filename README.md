@@ -2,6 +2,8 @@
 
 I created this thing personally to book squash court easily for myself. In theory it can be used to book any facility connected to ADDA system.
 
+![demo](demo.png)
+
 ## Features
 - consecutive booking above limits using different flats
 - getting session using provided credentials
