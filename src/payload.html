@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>ADDA book</title>
+        <link rel="stylesheet" href="payload.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>ADDA book</h1>
+            <form id="form">
+                <div class="field">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required />
+                </div>
+                <div class="field">
+                    <label for="time">Start time:</label>
+                    <input type="number" id="time" name="time" value="18" required />
+                </div>
+                <div class="field">
+                    <label>Closest:</label>
+                    <div id="closest">
+                        <button type="button" data-day="1">mon</button>
+                        <button type="button" data-day="2">tue</button>
+                        <button type="button" data-day="3">wed</button>
+                        <button type="button" data-day="4">thu</button>
+                        <button type="button" data-day="5">fri</button>
+                        <button type="button" data-day="6">sat</button>
+                        <button type="button" data-day="0">sun</button>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="time">Length (hours):</label>
+                    <input type="number" id="hours" name="hours" value="2" required />
+                </div>
+                <button type="submit">Book</button>
+            </form>
+        </div>
+        <script src="payload.js"></script>
+    </body>
+</html>

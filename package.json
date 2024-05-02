@@ -1,0 +1,26 @@
+{
+  "name": "adda-book-facility",
+  "version": "1.0.0",
+  "description": "Consecutive booking for adda facilities",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts"
+  },
+  "keywords": ["adda", "booking", "facility", "automation", "puppeteer", "typescript", "nodejs"],
+  "author": "seeingred",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "puppeteer": "^22.7.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.8",
+    "nodemon": "^3.1.0"
+  }
+}
