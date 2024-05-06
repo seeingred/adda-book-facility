@@ -4,7 +4,7 @@ import path from 'path'
 import { Payload } from './types'
 
 const getPhpSessionId = async (page: Page) => {
-    await page.goto('https://adda.io/login')
+    await page.goto('https://adda.io/login?redirect=%2Fmyadda%2Findex.php')
 
     let emailEntered = false
     let passwordEntered = false
